@@ -3,11 +3,11 @@ import "./Card.css"
 
 function Cards(props){
     return(
-        <div className="Card">
+        <div className="Card"style={{borderColor:props.color}}> 
             <div className="Conteudo">
                 {props.children}
             </div>
-            <div className="Footer">
+            <div className="Footer" style={{backgroundColor:props.color}}>
                 {props.titulo}
             </div>
 
