@@ -14,9 +14,6 @@ function CondicionalComIf(props) {
 
             </If>
 
-
-
-
         </div>
     )
 

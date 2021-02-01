@@ -1,12 +1,12 @@
 import React from 'react'
 import './App.css'
-import Primeiro from './components/Primeiro'
-import CompFilhos from './components/CompFilhos'
-import ComParametros from './components/ComParametros'
+import Primeiro from './components/basico/Primeiro'
+import CompFilhos from './components/basico/CompFilhos'
+import ComParametros from './components/basico/ComParametros'
 import Card from './layout/Card'
-import Repeticao from './components/Repeticao'
-import Condicional from './components/Condicional'
-import CondicionalComIf from './components/CondicionalComIf'
+import Repeticao from './components/basico/Repeticao'
+import Condicional from './components/basico/Condicional'
+import CondicionalComIf from './components/basico/CondicionalComIf'
 
 function App(props) {
     return (
@@ -31,8 +31,6 @@ function App(props) {
                     </ul>
                 </CompFilhos>
             </Card>
-
-
             <Card titulo="#02 - Componente com parametro">  
                 <ComParametros titulo="Esse é o titulo"
                               subtitulo='Esse é o subtitulo'/>  
@@ -41,29 +39,7 @@ function App(props) {
                 <Primeiro />
             </Card>
 
-                
-
-            
-
-
-
-
-
-            {/*  <CompFilhos>
-            <ul>
-                <li>Ana</li>
-                <li>Silvania</li>
-                <li>Maria</li>
-                <li>Mônica</li>
-            </ul>
-            </CompFilhos> */}
-            {/* 
-            <ComParametros titulo ="Esse é o título"
-                        subtitulo = "Esse é o subtitulo"/>
-            <ComParametros titulo ="Esse é outro"
-                        subtitulo = "Esse é mais um outro"/> */}
         </div>
-
     );
 }
 

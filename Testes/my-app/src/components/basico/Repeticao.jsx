@@ -1,9 +1,9 @@
-import React from 'react'
-import produtos from '../data/produtos'
+
+import Produtos from '../../data/Produtos'
 
 function getProdutosListItem(){
     return (
-        produtos.map((produto,index) => {
+        Produtos.map((produto,index) => {
             return <li key={index}>{produto.id} - {produto.nome} - R${produto.preco}</li>
 
         })
@@ -21,9 +21,4 @@ function Repeticao(props){
     )
 
 }
-
-
-
-
-
 export default Repeticao
