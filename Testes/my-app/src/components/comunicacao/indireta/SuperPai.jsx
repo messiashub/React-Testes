@@ -1,22 +1,26 @@
-import React from 'react';
+
+import React, { useState } from 'react';
 import SubFilho from './SubFilho'
 
 
 
-function QuandoClicar(valorGerado,texto){
-    console.log('Ação!!!');
-    console.log(valorGerado);
-    console.log(texto)
-}
+function SuperPai(props) {
 
-function SuperPai(props){
+    const [texto, setTexto] = useState('Gerar')
+    const [num, setNum] = useState(0)
 
-    return(
-    <div>
-        <h4>Valor</h4>
-        <SubFilho onClicke={QuandoClicar}></SubFilho>
-    </div>
-)
+    function QuandoClicar(valorGerado, texto) {
+        return (
+            setNum(valorGerado),
+            setTexto(texto)
+        )
+    }
+    return (
+        <div>
+            <h4>{texto}:{num}</h4>
+            <SubFilho onClicke={QuandoClicar}></SubFilho>
+        </div>
+    )
 
 }
 

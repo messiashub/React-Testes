@@ -9,7 +9,7 @@ function SubFilho(props){
         <div>
             
             <button onClick={()=>{
-                props.onClicke(Math.random(),"fim ")
+                props.onClicke(Math.random(),"Gerado ")
             }}>Alterar</button>
         </div>
     );
