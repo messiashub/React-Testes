@@ -8,10 +8,18 @@ import Repeticao from './components/basico/Repeticao'
 import Condicional from './components/basico/Condicional'
 import CondicionalComIf from './components/basico/CondicionalComIf'
 import Pai from './components/comunicacao/direta/Pai'
+import SuperPai from './components/comunicacao/indireta/SuperPai'
 
 function App(props) {
     return (
         <div className="App">
+            <Card titulo = "#08 - Comunicação indireta" color="#000">
+                <SuperPai></SuperPai>
+                
+            </Card>
+
+
+
 
             <Card titulo = "#07 - Comunicação Direta" color="#d9a324">
                 <Pai></Pai>
